@@ -63,11 +63,9 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### 💻Getting Started <a name="getting-started"></a>
+## 💻 Getting Started with Create React App <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
