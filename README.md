@@ -26,6 +26,8 @@
 # 📖 Math Magicians React Project <a name="about-project"></a>
 
 Math Magicians React Project - Microverse! project is a repository consisting of the following files:
+- Html files
+- CSS files
 - JS files
 - Html,CSS and JS linters file
 
@@ -36,6 +38,8 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 
   <ul>
     <ul>
+    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
+    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
        <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
   </ul>
 
@@ -53,8 +57,8 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 [Live Demo Link Not Avalaible now ](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-## 👁 Walkthrough <a name="Walkthrough"></a>
 
+## 👁 Walkthrough <a name="Walkthrough"></a>
 [Live vedio Not Avalaible now](#) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
