@@ -17,3 +17,10 @@
   grid-template-columns: repeat(4, var(--cell-width));
   grid-template-rows: repeat(6, var(--cell-height));
 }
+.calc-button-style {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  line-height: var(--cell-height);
+}
