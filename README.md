@@ -34,7 +34,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
   <ul>
     <ul>
@@ -44,23 +44,21 @@ Math Magicians React Project - Microverse! project is a repository consisting of
   </ul>
 
 ## 🔑 Key Features <a name="key-features"></a>
-### Javascript Capstone Project: [Requirements](https://github.com/microverseinc/curriculum-javascript/blob/main/group-capstone/js_capstone.md)
+
+### React Project: [Requirements](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/sneak_peek_v2.md)
 
 ### Features Added:
 - [x] Math Magicians: 
-   - Set up a React app.
-   - The comments popup. 
-   
- <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
-## 🚀 Live Demo <a name="live-demo"></a> 
-[Live Demo Link Not Avalaible now ](#)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 👁 Walkthrough <a name="Walkthrough"></a>
-[Live vedio Not Avalaible now](#) 
-
+   - [x] In the [previous project](https://github.com/Benawi/Microverse-Reac-Math-Magicians/pull/1), I worked on the setup of a React application using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html), now in this project:
+   - [x] All the boilerplate from Create React App (text, images, styles) is deleted.
+   - [x] A new directory called components created.
+   - [x] Inside components, a new Calculator.js file is created.
+   - [x] In Calculator.js, create a React component that matches [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) design.
+   - [x] The [design]( [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) ) only (JSX and CSS) is implemented
+   - [x] Functional components used
+   - [x] At least 1 child component is created
+   - [x] The Calculator is imported and used it in the top-level component: App.js
+   - [x] Test it in the browser; it should render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
@@ -233,7 +231,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [components](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_components.md)
+- Math magicians: [Events](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_events.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
