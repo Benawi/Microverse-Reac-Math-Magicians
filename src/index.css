@@ -11,3 +11,9 @@
 * {
   font-size: 20px;
 }
+
+.calculator-container {
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-width));
+  grid-template-rows: repeat(6, var(--cell-height));
+}
