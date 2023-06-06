@@ -8,3 +8,6 @@
   --cell-height: 50px;
   --cell-width: 100px;
 }
+* {
+  font-size: 20px;
+}
