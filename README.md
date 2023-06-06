@@ -59,9 +59,6 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] At least 1 child component is created
    - [x] The Calculator is imported and used it in the top-level component: App.js
    - [x] Test it in the browser; it should render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
- <p align="right">(<a href="#readme-top">back to top</a>)</p>
- 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
