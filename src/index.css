@@ -39,3 +39,6 @@
 .zero-button {
   grid-area: 6/1/7/3;
 }
+.operators-buttons {
+  background-color: var(--operators-bc-color);
+}
