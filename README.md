@@ -231,7 +231,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [components](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_components.md)
+- Math magicians: [Events](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_events.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
