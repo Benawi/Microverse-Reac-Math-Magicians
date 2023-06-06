@@ -12,7 +12,7 @@ class Calculator extends React.Component {
     const { result } = this.state;
     return (
       <div id="calculator-container" className="calculator-container">
-        <div id="result" className="result-display calc-button-style">
+        <div id="result" className="result-display">
           {result}
         </div>
         <div className="calc-button-style">AC</div>
