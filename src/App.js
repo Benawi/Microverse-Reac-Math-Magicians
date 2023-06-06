@@ -1,24 +1,29 @@
 import React from 'react';
-import  Calculator from './components/calculator';
-class App extends Component {
+import Calculator from './components/calculator';
+
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      somethingUseless:true,
+      somethingUseless: true,
     };
   }
+
   render() {
-    const {somethingUseless} = this.state;
-    if(somethingUseless){
-      return (<div className="App">
-        <Calculator />
-      </div>
+    const { somethingUseless } = this.state;
+    if (somethingUseless) {
+      return (
+        <div className="App">
+          <Calculator />
+        </div>
       );
     }
 
-    return (<div className="App">
-      <Calculator />  
-    </div>);
+    return (
+      <div className="App">
+        <Calculator />
+      </div>
+    );
   }
 }
 
