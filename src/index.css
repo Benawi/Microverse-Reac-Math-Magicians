@@ -36,3 +36,6 @@
   line-height: var(--cell-height);
 }
 
+.zero-button {
+  grid-area: 6/1/7/3;
+}
