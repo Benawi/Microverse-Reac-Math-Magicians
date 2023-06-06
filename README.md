@@ -44,7 +44,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
   </ul>
 
 ## 🔑 Key Features <a name="key-features"></a>
-### Javascript Capstone Project: [Requirements](https://github.com/microverseinc/curriculum-javascript/blob/main/group-capstone/js_capstone.md)
+### React Project: [Requirements](https://github.com/microverseinc/curriculum-javascript/blob/main/group-capstone/js_capstone.md)
 
 ### Features Added:
 - [x] Math Magicians: 
