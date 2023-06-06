@@ -17,6 +17,17 @@
   grid-template-columns: repeat(4, var(--cell-width));
   grid-template-rows: repeat(6, var(--cell-height));
 }
+
+.result-display {
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.25rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
 .calc-button-style {
   background-color: var(--primary-button-bc-color);
   border: 1px solid var(--border-color);
@@ -24,3 +35,4 @@
   text-align: center;
   line-height: var(--cell-height);
 }
+
