@@ -158,14 +158,6 @@ npm start
 npm install --save-dev style-loader css-loader
 ```
 
-### webpack-dev-server
-
-- Run the following command:
-
-```
-npm install --save-dev webpack-dev-server
-```
-
 ### Webhint installation.
 
 - Run the following command:
