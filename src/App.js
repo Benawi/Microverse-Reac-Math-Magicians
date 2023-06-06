@@ -7,7 +7,19 @@ class App extends Component {
       somethingUseless:true,
     };
   }
-  
+  render() {
+    const {somethingUseless} = this.state;
+    if(somethingUseless){
+      return (<div className="App">
+        <Calculator />
+      </div>
+      );
+    }
+
+    return (<div className="App">
+      <Calculator />  
+    </div>);
+  }
 }
 
 export default App;
