@@ -34,7 +34,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+## Tech Stack <a name="tech-stack"></a>
 
   <ul>
     <ul>
@@ -44,6 +44,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
   </ul>
 
 ## 🔑 Key Features <a name="key-features"></a>
+
 ### React Project: [Requirements](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/sneak_peek_v2.md)
 
 ### Features Added:
@@ -62,11 +63,6 @@ Math Magicians React Project - Microverse! project is a repository consisting of
  
 ## 🚀 Live Demo <a name="live-demo"></a> 
 [Live Demo Link Not Avalaible now ](#)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 👁 Walkthrough <a name="Walkthrough"></a>
-[Live vedio Not Avalaible now](#) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
