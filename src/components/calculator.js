@@ -32,38 +32,45 @@ const updateCalculation = (obj, button, setObj) => {
   setObj(newObj);
 };
 
+const CalculatorButton = ({ value, func, className = '' }) => (
+  <div
+    className={`calc-button-style ${className}`}
+    role="button"
+    tabIndex="0"
+    onClick={func}
+    onKeyPress={func}
+  >
+    {value}
+  </div>
+);
+
 export default function Calculator(props) {
   const {
     total, next, operation, setCalculatorObj,
   } = props;
   const calculatorObj = { total, next, operation };
-
-  return (
-    <div id="calculator-container" className="calculator-container">
-      <div id="result" className="result-display">
-        { displayResult(calculatorObj) }
-      </div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, 'AC', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, 'AC', setCalculatorObj); }}>AC</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '+/-', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '+/-', setCalculatorObj); }}>+/-</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '%', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '%', setCalculatorObj); }}>%</div>
-      <div className="operators-buttons calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '÷', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '÷', setCalculatorObj); }}>÷</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '7', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '7', setCalculatorObj); }}>7</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '8', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '8', setCalculatorObj); }}>8</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '9', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '9', setCalculatorObj); }}>9</div>
-      <div className="operators-buttons calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, 'x', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, 'x', setCalculatorObj); }}>x</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '4', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '4', setCalculatorObj); }}>4</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '5', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '5', setCalculatorObj); }}>5</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '6', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '6', setCalculatorObj); }}>6</div>
-      <div className="operators-buttons calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '-', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '-', setCalculatorObj); }}>-</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '1', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '1', setCalculatorObj); }}>1</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '2', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '2', setCalculatorObj); }}>2</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '3', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '3', setCalculatorObj); }}>3</div>
-      <div className="operators-buttons calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '+', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '+', setCalculatorObj); }}>+</div>
-      <div className="zero-button calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '0', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '0', setCalculatorObj); }}>0</div>
-      <div className="calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '.', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '.', setCalculatorObj); }}>.</div>
-      <div className="operators-buttons calc-button-style" role="button" tabIndex="0" onClick={() => { updateCalculation(calculatorObj, '=', setCalculatorObj); }} onKeyPress={() => { updateCalculation(calculatorObj, '=', setCalculatorObj); }}>=</div>
-    </div>
-  );
+  const buttonArr = [
+    { value: 'AC', func: () => { updateCalculation(calculatorObj, 'AC', setCalculatorObj); } },
+    { value: '+/-', func: () => { updateCalculation(calculatorObj, '+/-', setCalculatorObj); } },
+    { value: '%', func: () => { updateCalculation(calculatorObj, '%', setCalculatorObj); } },
+    { value: '÷', func: () => { updateCalculation(calculatorObj, '÷', setCalculatorObj); }, className: 'operators-buttons' },
+    { value: '7', func: () => { updateCalculation(calculatorObj, '7', setCalculatorObj); } },
+    { value: '8', func: () => { updateCalculation(calculatorObj, '8', setCalculatorObj); } },
+    { value: '9', func: () => { updateCalculation(calculatorObj, '9', setCalculatorObj); } },
+    { value: 'x', func: () => { updateCalculation(calculatorObj, 'x', setCalculatorObj); }, className: 'operators-buttons' },
+    { value: '4', func: () => { updateCalculation(calculatorObj, '4', setCalculatorObj); } },
+    { value: '5', func: () => { updateCalculation(calculatorObj, '5', setCalculatorObj); } },
+    { value: '6', func: () => { updateCalculation(calculatorObj, '6', setCalculatorObj); } },
+    { value: '-', func: () => { updateCalculation(calculatorObj, '-', setCalculatorObj); }, className: 'operators-buttons' },
+    { value: '1', func: () => { updateCalculation(calculatorObj, '1', setCalculatorObj); } },
+    { value: '2', func: () => { updateCalculation(calculatorObj, '2', setCalculatorObj); } },
+    { value: '3', func: () => { updateCalculation(calculatorObj, '3', setCalculatorObj); } },
+    { value: '+', func: () => { updateCalculation(calculatorObj, '+', setCalculatorObj); }, className: 'operators-buttons' },
+    { value: '0', func: () => { updateCalculation(calculatorObj, '0', setCalculatorObj); }, className: 'zero-button' },
+    { value: '.', func: () => { updateCalculation(calculatorObj, '.', setCalculatorObj); } },
+    { value: '=', func: () => { updateCalculation(calculatorObj, '=', setCalculatorObj); }, className: 'operators-buttons' },
+  ];
+  
 }
 
 Calculator.propTypes = {
