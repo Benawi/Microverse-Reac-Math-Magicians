@@ -1,41 +1,54 @@
+import PropTypes from 'prop-types';
 import React from 'react';
+import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
+export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      result: 0,
-    };
+    this.calculate = this.calculate.bind(this);
+    this.displayResult = this.displayResult.bind(this);
   }
 
-  render() {
-    const { result } = this.state;
-    return (
-      <div id="calculator-container" className="calculator-container">
-        <div id="result" className="result-display">
-          {result}
-        </div>
-        <div className="calc-button-style">AC</div>
-        <div className="calc-button-style">+/-</div>
-        <div className="calc-button-style">%</div>
-        <div className="operators-buttons calc-button-style">÷</div>
-        <div className="calc-button-style">7</div>
-        <div className="calc-button-style">8</div>
-        <div className="calc-button-style">9</div>
-        <div className="operators-buttons calc-button-style">x</div>
-        <div className="calc-button-style">4</div>
-        <div className="calc-button-style">5</div>
-        <div className="calc-button-style">6</div>
-        <div className="operators-buttons calc-button-style">-</div>
-        <div className="calc-button-style">1</div>
-        <div className="calc-button-style">2</div>
-        <div className="calc-button-style">3</div>
-        <div className="operators-buttons calc-button-style">+</div>
-        <div className="zero-button calc-button-style">0</div>
-        <div className="calc-button-style">.</div>
-        <div className="operators-buttons calc-button-style">=</div>
-      </div>
-    );
+  calculate(obj, button) {
+    const { updateState } = this.props;
+    let objNew;
+    try {
+      objNew = calculate(obj, button);
+    } catch {
+      objNew = {
+        total: 'Cannot calculate the operation by 0',
+      };
+    }
+    this.calculatorObj = objNew;
+    updateState(objNew);
   }
+
+  displayResult() {
+    const { calculatorObj } = this.props;
+    const { total } = calculatorObj;
+    const { next } = calculatorObj;
+    const { operation } = calculatorObj;
+    let result = null;
+
+    if (total === null && next === null) {
+      result = 0;
+    } else if (next !== null && total === null) {
+      result = next;
+    } else if (next !== null && total !== null) {
+      if (operation !== null && operation !== undefined) {
+        result = `${total} ${operation} ${next}`;
+      } else {
+        result = total;
+      }
+    } else if (next === null && total !== null) {
+      if (operation !== null && operation !== undefined) {
+        result = `${total} ${operation}`;
+      } else {
+        result = total;
+      }
+    }
+
+    return result;
+  }
+
 }
-export default Calculator;
