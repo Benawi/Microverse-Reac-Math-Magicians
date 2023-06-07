@@ -51,4 +51,224 @@ export default class Calculator extends React.Component {
     return result;
   }
 
+  render() {
+    const { calculatorObj } = this.props;
+    return (
+      <div id="calculator-container" className="calculator-container">
+        <div id="result" className="result-display">
+          {this.displayResult()}
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, 'AC'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, 'AC'); }}
+        >
+          AC
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '+/-'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '+/-'); }}
+        >
+          +/-
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '%'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '%'); }}
+        >
+          %
+        </div>
+        <div
+          className="operators-buttons calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '÷'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '÷'); }}
+        >
+          ÷
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '7'); }
+            }
+          onKeyPress={() => { this.calculate(calculatorObj, '7'); }}
+        >
+          7
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '8'); }
+          }
+          onKeyPress={() => { this.calculate(calculatorObj, '8'); }}
+        >
+          8
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '9'); }
+          }
+          onKeyPress={() => { this.calculate(calculatorObj, '9'); }}
+        >
+          9
+        </div>
+        <div
+          className="operators-buttons calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, 'x'); }
+          }
+          onKeyPress={() => { this.calculate(calculatorObj, 'x'); }}
+        >
+          x
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '4'); }
+          }
+          onKeyPress={() => { this.calculate(calculatorObj, '4'); }}
+        >
+          4
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '5'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '5'); }}
+        >
+          5
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '6'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '6'); }}
+        >
+          6
+        </div>
+        <div
+          className="operators-buttons calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '-'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '-'); }}
+        >
+          -
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '1'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '1'); }}
+        >
+          1
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '2'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '2'); }}
+        >
+          2
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '3'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '3'); }}
+        >
+          3
+        </div>
+        <div
+          className="operators-buttons calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '+'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '+'); }}
+        >
+          +
+        </div>
+        <div
+          className="zero-button calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '0'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '0'); }}
+        >
+          0
+        </div>
+        <div
+          className="calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '.'); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '.'); }}
+        >
+          .
+        </div>
+        <div
+          className="operators-buttons calc-button-style"
+          role="button"
+          tabIndex="0"
+          onClick={
+          () => { this.calculate(this.calculatorObj, '='); }
+        }
+          onKeyPress={() => { this.calculate(calculatorObj, '='); }}
+        >
+          =
+        </div>
+      </div>
+    );
+  }
 }
+
