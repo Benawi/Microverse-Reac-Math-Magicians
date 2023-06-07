@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mathapp/static/css/main.aabefcd0.css",
-    "main.js": "/mathapp/static/js/main.32b764f7.js",
-    "static/js/787.ed2f60ce.chunk.js": "/mathapp/static/js/787.ed2f60ce.chunk.js",
-    "index.html": "/mathapp/index.html",
-    "main.aabefcd0.css.map": "/mathapp/static/css/main.aabefcd0.css.map",
-    "main.32b764f7.js.map": "/mathapp/static/js/main.32b764f7.js.map",
-    "787.ed2f60ce.chunk.js.map": "/mathapp/static/js/787.ed2f60ce.chunk.js.map"
+    "main.css": "/Microverse-Reac-Math-Magicians/static/css/main.aabefcd0.css",
+    "main.js": "/Microverse-Reac-Math-Magicians/static/js/main.2d07a00c.js",
+    "static/js/787.ed2f60ce.chunk.js": "/Microverse-Reac-Math-Magicians/static/js/787.ed2f60ce.chunk.js",
+    "index.html": "/Microverse-Reac-Math-Magicians/index.html",
+    "main.aabefcd0.css.map": "/Microverse-Reac-Math-Magicians/static/css/main.aabefcd0.css.map",
+    "main.2d07a00c.js.map": "/Microverse-Reac-Math-Magicians/static/js/main.2d07a00c.js.map",
+    "787.ed2f60ce.chunk.js.map": "/Microverse-Reac-Math-Magicians/static/js/787.ed2f60ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aabefcd0.css",
-    "static/js/main.32b764f7.js"
+    "static/js/main.2d07a00c.js"
   ]
 }
