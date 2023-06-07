@@ -31,17 +31,17 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 - JS files
 - Html,CSS and JS linters file
 
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ## Tech Stack <a name="tech-stack"></a>
 
+<ul>
   <ul>
-    <ul>
-    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
-    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
-       <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
-  </ul>
+  <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
+  <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
+      <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
+</ul>
+
 
 ## 🔑 Key Features <a name="key-features"></a>
 
