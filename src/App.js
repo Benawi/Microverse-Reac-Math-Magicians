@@ -1,30 +1,17 @@
-import React from 'react';
+import React, { state } from 'react';
 import Calculator from './components/calculator';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      somethingUseless: true,
+      calculatorObj: {
+        total: null,
+        next: null,
+        operation: null,
+      },
     };
+    this.updateState = this.updateState.bind(this);
   }
 
-  render() {
-    const { somethingUseless } = this.state;
-    if (somethingUseless) {
-      return (
-        <div className="App">
-          <Calculator />
-        </div>
-      );
-    }
-
-    return (
-      <div className="App">
-        <Calculator />
-      </div>
-    );
-  }
-}
-
-export default App;
+  
