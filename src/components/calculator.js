@@ -32,18 +32,6 @@ const updateCalculation = (obj, button, setObj) => {
   setObj(newObj);
 };
 
-const CalculatorButton = ({ value, func, className = '' }) => (
-  <div
-    className={`calc-button-style ${className}`}
-    role="button"
-    tabIndex="0"
-    onClick={func}
-    onKeyPress={func}
-  >
-    {value}
-  </div>
-);
-
 export default function Calculator(props) {
   const {
     total, next, operation, setCalculatorObj,
@@ -86,6 +74,17 @@ export default function Calculator(props) {
     </div>
   );
 }
+const CalculatorButton = ({ value, func, className = '' }) => (
+  <div
+    className={`calc-button-style ${className}`}
+    role="button"
+    tabIndex="0"
+    onClick={func}
+    onKeyPress={func}
+  >
+    {value}
+  </div>
+);
 
 Calculator.propTypes = {
   total: PropTypes.string,
