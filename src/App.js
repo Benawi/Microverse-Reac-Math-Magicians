@@ -18,4 +18,18 @@ class App extends React.Component {
     this.setState({ calculatorObj: obj });
   }
 
-  
+  render() {
+    const { calculatorObj } = this.state;
+
+    return (
+      <div className="App">
+        <Calculator
+          updateState={this.updateState}
+          calculatorObj={calculatorObj}
+        />
+      </div>
+    );
+  }
+}
+
+export default App;
