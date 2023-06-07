@@ -1,35 +1,20 @@
-import React from 'react';
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-lone-blocks */
+import React, { useState } from 'react';
 import Calculator from './components/calculator';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      calculatorObj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-    };
-    this.updateState = this.updateState.bind(this);
-  }
-
-  updateState(obj) {
-    this.setState({ calculatorObj: obj });
-  }
-
-  render() {
-    const { calculatorObj } = this.state;
-
-    return (
-      <div className="App">
-        <Calculator
-          updateState={this.updateState}
-          calculatorObj={calculatorObj}
-        />
-      </div>
-    );
-  }
+function App() {
+  const [calculatorObj, setCalculatorObj] = useState(0);
+  return (
+    <div className="App">
+      <Calculator
+        total={calculatorObj.total}
+        next={calculatorObj.next}
+        operation={calculatorObj.operation}
+        setCalculatorObj={setCalculatorObj}
+      />
+    </div>
+  );
 }
 
 export default App;
