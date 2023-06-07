@@ -14,4 +14,8 @@ class App extends React.Component {
     this.updateState = this.updateState.bind(this);
   }
 
+  updateState(obj) {
+    this.setState({ calculatorObj: obj });
+  }
+
   
