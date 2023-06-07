@@ -63,7 +63,8 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🌐 Live Demo <a name="#live-demo"></a>
-[React Math Web App](https://benawi.github.io/Microverse-Reac-Math-Magicians/)
+- [React Math Web App](https://benawi.github.io/Microverse-Reac-Math-Magicians/) 
+- Learn More [How to deploy react app](https://github.com/gitname/react-gh-pages)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
