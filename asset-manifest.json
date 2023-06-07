@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/app/static/css/main.aabefcd0.css",
-    "main.js": "/app/static/js/main.749409d6.js",
-    "static/js/787.ed2f60ce.chunk.js": "/app/static/js/787.ed2f60ce.chunk.js",
-    "index.html": "/app/index.html",
-    "main.aabefcd0.css.map": "/app/static/css/main.aabefcd0.css.map",
-    "main.749409d6.js.map": "/app/static/js/main.749409d6.js.map",
-    "787.ed2f60ce.chunk.js.map": "/app/static/js/787.ed2f60ce.chunk.js.map"
+    "main.css": "//benawi.github.io/mathapp/static/css/main.aabefcd0.css",
+    "main.js": "//benawi.github.io/mathapp/static/js/main.3858c5ea.js",
+    "static/js/787.ed2f60ce.chunk.js": "//benawi.github.io/mathapp/static/js/787.ed2f60ce.chunk.js",
+    "index.html": "//benawi.github.io/mathapp/index.html",
+    "main.aabefcd0.css.map": "//benawi.github.io/mathapp/static/css/main.aabefcd0.css.map",
+    "main.3858c5ea.js.map": "//benawi.github.io/mathapp/static/js/main.3858c5ea.js.map",
+    "787.ed2f60ce.chunk.js.map": "//benawi.github.io/mathapp/static/js/787.ed2f60ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aabefcd0.css",
-    "static/js/main.749409d6.js"
+    "static/js/main.3858c5ea.js"
   ]
 }
