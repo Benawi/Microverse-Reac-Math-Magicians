@@ -271,4 +271,7 @@ export default class Calculator extends React.Component {
     );
   }
 }
-
+Calculator.propTypes = {
+  updateState: PropTypes.func.isRequired,
+  calculatorObj: PropTypes.instanceOf(Object).isRequired,
+};
