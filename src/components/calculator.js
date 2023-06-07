@@ -70,7 +70,21 @@ export default function Calculator(props) {
     { value: '.', func: () => { updateCalculation(calculatorObj, '.', setCalculatorObj); } },
     { value: '=', func: () => { updateCalculation(calculatorObj, '=', setCalculatorObj); }, className: 'operators-buttons' },
   ];
-  
+  return (
+    <div id="calculator-container" className="calculator-container">
+      <div id="result" className="result-display">
+        { displayResult(calculatorObj) }
+      </div>
+      {buttonArr.map((button) => (
+        <CalculatorButton
+          key={button.value}
+          value={button.value}
+          func={button.func}
+          className={button.className}
+        />
+      ))}
+    </div>
+  );
 }
 
 Calculator.propTypes = {
