@@ -7,7 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [Live Demo](#live-demo)
-    - [Walkthrough](#Walkthrough)
+    <!-- - [Walkthrough](#Walkthrough) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -60,6 +60,10 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] The Calculator is imported and used it in the top-level component: App.js
    - [x] All calculator buttons work according to their functionality e.g. the - button will subtract a given value
    - [x] Test it in the browser; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🌐 Live Demo <a name="#live-demo"></a>
+[React Math Web App](https://benawi.github.io/Microverse-Reac-Math-Magicians/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
@@ -232,7 +236,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [Events](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_events.md)
+- Math magicians: [fetch data from API](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_fetch_data_from_api.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
