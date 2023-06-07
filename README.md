@@ -249,7 +249,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give us ⭐️ If you like this project!
+Give me ⭐️ If you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
