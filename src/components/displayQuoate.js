@@ -25,7 +25,15 @@ const GetQuotes = () => {
     fetchQuote();
   }, []);
 
-  
+  return (
+    <div className="giant-quotes-quote">
+      <blockquote>
+        <p>{isLoading ? 'Quates Loading...' : (error || quote)}</p>
+        <cite>{isLoading ? 'Author Loading...' : (error || author)}</cite>
+      </blockquote>
+    </div>
+
+  );
 };
 
 export default GetQuotes;
