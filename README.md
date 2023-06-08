@@ -67,7 +67,6 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] The [new](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L4) component imported into the main component (next to the Calculator)
    - [x] In the browser tested ; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 
-   - [x] Test it in the browser; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🌐 Live Demo <a name="#live-demo"></a>
