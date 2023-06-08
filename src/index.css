@@ -56,3 +56,10 @@
   max-width: 35em;
 }
 
+.giant-quotes-quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 3em;
+  position: relative;
+}
+
