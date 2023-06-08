@@ -86,3 +86,11 @@
   transform: scale(2, 8);
   transform-origin: top;
 }
+
+.giant-quotes-quote blockquote cite {
+  color: #c60;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
