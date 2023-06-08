@@ -48,3 +48,11 @@
 .operators-buttons {
   background-color: var(--operators-bc-color);
 }
+
+.giant-quotes-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 3em;
+  max-width: 35em;
+}
+
