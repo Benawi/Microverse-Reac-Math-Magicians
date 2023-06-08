@@ -59,6 +59,14 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] At least 1 child component is created
    - [x] The Calculator is imported and used it in the top-level component: App.js
    - [x] All calculator buttons work according to their functionality e.g. the - button will subtract a given value
+    - [x] The following external API: [API Ninjas](https://api-ninjas.com/api/quotes) used to fetch data
+   - [x] A [new](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L4) component is created for displaying a quote
+   - [x] Data fetched inside of a new component
+   - [x] A [loading](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L30-L35) state showed
+   - [x] An error state stated showed [L21](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L21)
+   - [x] The [new](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L4) component imported into the main component (next to the Calculator)
+   - [x] In the browser tested ; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
+
    - [x] Test it in the browser; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,7 +245,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [fetch data from API](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_fetch_data_from_api.md)
+- Math magicians: [Full website](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_full_website_v2.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
