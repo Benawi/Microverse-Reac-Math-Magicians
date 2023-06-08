@@ -8,7 +8,21 @@ const GetQuotes = () => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-   
+    const fetchQuote = async () => {
+      try {
+        const response = await fetch(API_URL, {
+          headers: { 'X-API-KEY': '2Bu1KsxDYznv3VexzycK7ELFg0A555GgyfRlAkfG' },
+        });
+        const data = await response.json();
+        setQuote(`${data[0].quote}`);
+        setAuthor(`- ${data[0].author}`);
+        setLoading(false);
+      } catch (error) {
+        setError(error.message);
+        setLoading(false);
+      }
+    };
+    
 };
 
 export default GetQuotes;
