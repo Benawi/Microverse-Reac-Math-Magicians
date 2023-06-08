@@ -7,7 +7,8 @@ const GetQuotes = () => {
   const [error, setError] = useState('');
   const [isLoading, setLoading] = useState(true);
 
-  
+  useEffect(() => {
+   
 };
 
 export default GetQuotes;
