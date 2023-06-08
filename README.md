@@ -7,7 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [Live Demo](#live-demo)
-    - [Walkthrough](#Walkthrough)
+    <!-- - [Walkthrough](#Walkthrough) -->
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -31,17 +31,17 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 - JS files
 - Html,CSS and JS linters file
 
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ## Tech Stack <a name="tech-stack"></a>
 
+<ul>
   <ul>
-    <ul>
-    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
-    <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
-       <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
-  </ul>
+  <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">HTML</a></li>
+  <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">CSS</a></li>
+      <li><a href="https://microverse.notion.site/HTML-CSS-Get-a-head-start-275eb85fd34b4416aa06ec635d69cdaf">JS</a></li>
+</ul>
+
 
 ## 🔑 Key Features <a name="key-features"></a>
 
@@ -58,7 +58,13 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] Functional components used
    - [x] At least 1 child component is created
    - [x] The Calculator is imported and used it in the top-level component: App.js
-   - [x] Test it in the browser; it should render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
+   - [x] All calculator buttons work according to their functionality e.g. the - button will subtract a given value
+   - [x] Test it in the browser; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🌐 Live Demo <a name="#live-demo"></a>
+- [React Math Web App](https://benawi.github.io/Microverse-Reac-Math-Magicians/) 
+- Learn More [How to deploy react app](https://github.com/gitname/react-gh-pages)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
@@ -231,7 +237,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [Events](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_events.md)
+- Math magicians: [fetch data from API](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_fetch_data_from_api.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,7 +249,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Give us ⭐️ If you like this project!
+Give me ⭐️ If you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

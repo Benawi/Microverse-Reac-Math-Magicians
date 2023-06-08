@@ -38,6 +38,7 @@
   color: var(--button-font-color);
   text-align: center;
   line-height: var(--cell-height);
+  cursor: pointer;
 }
 
 .zero-button {
