@@ -75,4 +75,14 @@
   transform-origin: top;
 }
 
-.
+.giant-quotes-quote ::after {
+  color: #f90;
+  content: "\201D";
+  font-size: 4em;
+  right: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
