@@ -1,5 +1,3 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-lone-blocks */
 import React, { useState } from 'react';
 import Calculator from './components/calculator';
 import GetQuotes from './components/displayQuoate';
