@@ -2,6 +2,7 @@
 /* eslint-disable no-lone-blocks */
 import React, { useState } from 'react';
 import Calculator from './components/calculator';
+import GetQuotes from './components/displayQuoate';
 
 function App() {
   const [calculatorObj, setCalculatorObj] = useState(0);
@@ -13,7 +14,9 @@ function App() {
         operation={calculatorObj.operation}
         setCalculatorObj={setCalculatorObj}
       />
+      <GetQuotes />
     </div>
+
   );
 }
 
