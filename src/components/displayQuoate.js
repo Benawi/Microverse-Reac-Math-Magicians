@@ -22,7 +22,10 @@ const GetQuotes = () => {
         setLoading(false);
       }
     };
-    
+    fetchQuote();
+  }, []);
+
+  
 };
 
 export default GetQuotes;
