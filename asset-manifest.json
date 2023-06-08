@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Microverse-Reac-Math-Magicians/static/css/main.aabefcd0.css",
-    "main.js": "/Microverse-Reac-Math-Magicians/static/js/main.83498f0c.js",
+    "main.css": "/Microverse-Reac-Math-Magicians/static/css/main.384e0bb4.css",
+    "main.js": "/Microverse-Reac-Math-Magicians/static/js/main.5a0a1116.js",
     "static/js/787.ed2f60ce.chunk.js": "/Microverse-Reac-Math-Magicians/static/js/787.ed2f60ce.chunk.js",
     "index.html": "/Microverse-Reac-Math-Magicians/index.html",
-    "main.aabefcd0.css.map": "/Microverse-Reac-Math-Magicians/static/css/main.aabefcd0.css.map",
-    "main.83498f0c.js.map": "/Microverse-Reac-Math-Magicians/static/js/main.83498f0c.js.map",
+    "main.384e0bb4.css.map": "/Microverse-Reac-Math-Magicians/static/css/main.384e0bb4.css.map",
+    "main.5a0a1116.js.map": "/Microverse-Reac-Math-Magicians/static/js/main.5a0a1116.js.map",
     "787.ed2f60ce.chunk.js.map": "/Microverse-Reac-Math-Magicians/static/js/787.ed2f60ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aabefcd0.css",
-    "static/js/main.83498f0c.js"
+    "static/css/main.384e0bb4.css",
+    "static/js/main.5a0a1116.js"
   ]
 }
