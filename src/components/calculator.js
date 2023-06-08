@@ -94,7 +94,7 @@ Calculator.propTypes = {
 };
 
 Calculator.defaultProps = {
-  total: 0,
+  total: null,
   next: null,
   operation: null,
 };
