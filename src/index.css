@@ -48,3 +48,49 @@
 .operators-buttons {
   background-color: var(--operators-bc-color);
 }
+
+.giant-quotes-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 3em;
+  max-width: 35em;
+}
+
+.giant-quotes-quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 3em;
+  position: relative;
+}
+
+.giant-quotes-quote ::before {
+  color: #f90;
+  content: "\201C";
+  font-size: 4em;
+  left: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.giant-quotes-quote ::after {
+  color: #f90;
+  content: "\201D";
+  font-size: 4em;
+  right: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.giant-quotes-quote blockquote cite {
+  color: #c60;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
