@@ -68,6 +68,13 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] A [loading](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L30-L35) state showed
    - [x] An error state stated showed [L21](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L21)
    - [x] The [new](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L4) component imported into the main component (next to the Calculator)
+   - [x] A website consisting of 3 pages: Home, Calculator, and Quote is created.
+   - [x] The general layout match [these](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_full_website_v2.md) wireframes
+   - [x] styles added to improve the look and feel.
+        - React basic styling (inline styles, importing CSS and pre-processed CSS files) used.
+   - [x] For every page, a <Route> created.
+   - [x] Navigation links for all 3 routes are displayed on each page.
+   - [x] [React Router](https://reactrouter.com/en/main) used to make the routes work.
    - [x] In the browser tested ; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
