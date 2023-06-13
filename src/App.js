@@ -1,6 +1,4 @@
-import {
-  BrowserRouter, Route, Routes,
-} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Calculator from './components/calculator';
 import GetQuotes from './components/displayQuoate';
 import Home from './components/home';
