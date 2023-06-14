@@ -14,3 +14,11 @@ describe('subtract', () => {
   });
 });
 
+describe('multiply', () => {
+  test('multiply two numbers correctly', () => {
+    expect(operate(5, 3, 'x')).toBe('15');
+    expect(operate(2, 1, 'x')).toBe('2');
+  });
+});
+
+
