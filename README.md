@@ -75,6 +75,14 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] For every page, a <Route> created.
    - [x] Navigation links for all 3 routes are displayed on each page.
    - [x] [React Router](https://reactrouter.com/en/main) used to make the routes work.
+   - [x] Set up React Testing Library.
+  - [x] The official [documentation](https://testing-library.com/docs/react-testing-library/intro) is followed
+  - [x] Jest Setup(it's included in Create React App).
+  - [x]  Write unit tests for the files operate.js and calculate.js using Jest.
+  - [x] Create unit to all React components tested:
+    - [x] Jest snapshots used to test the components.
+    - [x] React Testing Library used to simulate user interaction.
+  - [x] Run full tests suite using Jest. All tests [pass](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/09c3332f-5ec0-4ad0-9d64-481d15f7dd90)
    - [x] In the browser tested ; it render without problems, [this](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/219b8efd-d227-4aba-b08a-1ef49d460565)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -254,7 +262,7 @@ You can redeploy this project by adding new lines of code to source files.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Math magicians: [Testing](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_tests.md)
+- Math magicians: Deployement
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
