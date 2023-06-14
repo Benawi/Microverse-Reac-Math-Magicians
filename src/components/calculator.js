@@ -1,100 +1,82 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
+import Buttons from './buttonsComponents';
 import calculate from '../logic/calculate';
 
-const displayResult = (calculatorObj) => {
-  const { total } = calculatorObj;
-  const { next } = calculatorObj;
-  const { operation } = calculatorObj;
-  let result = null;
+const Calculator = () => {
+  const [count, setCount] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-  if (total === null && next === null) {
-    result = 0;
-  } else if (next !== null && total === null) {
-    result = next;
-  } else if (next !== null && total !== null) {
-    if (operation !== null && operation !== undefined) {
-      result = `${total} ${operation} ${next}`;
-    } else {
-      result = total;
-    }
-  } else if (next === null && total !== null) {
-    if (operation !== null && operation !== undefined) {
-      result = `${total} ${operation}`;
-    } else {
-      result = total;
-    }
-  }
-  return result;
-};
-const updateCalculation = (obj, button, setObj) => {
-  const newObj = calculate(obj, button);
-  setObj(newObj);
-};
+  const handleClick = (value) => {
+    setCount(calculate(count, value));
+  };
 
-export default function Calculator(props) {
-  const {
-    total, next, operation, setCalculatorObj,
-  } = props;
-  const calculatorObj = { total, next, operation };
-  const buttonArr = [
-    { value: 'AC', func: () => { updateCalculation(calculatorObj, 'AC', setCalculatorObj); } },
-    { value: '+/-', func: () => { updateCalculation(calculatorObj, '+/-', setCalculatorObj); } },
-    { value: '%', func: () => { updateCalculation(calculatorObj, '%', setCalculatorObj); } },
-    { value: '÷', func: () => { updateCalculation(calculatorObj, '÷', setCalculatorObj); }, className: 'operators-buttons' },
-    { value: '7', func: () => { updateCalculation(calculatorObj, '7', setCalculatorObj); } },
-    { value: '8', func: () => { updateCalculation(calculatorObj, '8', setCalculatorObj); } },
-    { value: '9', func: () => { updateCalculation(calculatorObj, '9', setCalculatorObj); } },
-    { value: 'x', func: () => { updateCalculation(calculatorObj, 'x', setCalculatorObj); }, className: 'operators-buttons' },
-    { value: '4', func: () => { updateCalculation(calculatorObj, '4', setCalculatorObj); } },
-    { value: '5', func: () => { updateCalculation(calculatorObj, '5', setCalculatorObj); } },
-    { value: '6', func: () => { updateCalculation(calculatorObj, '6', setCalculatorObj); } },
-    { value: '-', func: () => { updateCalculation(calculatorObj, '-', setCalculatorObj); }, className: 'operators-buttons' },
-    { value: '1', func: () => { updateCalculation(calculatorObj, '1', setCalculatorObj); } },
-    { value: '2', func: () => { updateCalculation(calculatorObj, '2', setCalculatorObj); } },
-    { value: '3', func: () => { updateCalculation(calculatorObj, '3', setCalculatorObj); } },
-    { value: '+', func: () => { updateCalculation(calculatorObj, '+', setCalculatorObj); }, className: 'operators-buttons' },
-    { value: '0', func: () => { updateCalculation(calculatorObj, '0', setCalculatorObj); }, className: 'zero-button' },
-    { value: '.', func: () => { updateCalculation(calculatorObj, '.', setCalculatorObj); } },
-    { value: '=', func: () => { updateCalculation(calculatorObj, '=', setCalculatorObj); }, className: 'operators-buttons' },
-  ];
   return (
-    <div id="calculator-container" className="calculator-container">
-      <div id="result" className="result-display">
-        { displayResult(calculatorObj) }
+    <>
+      <div className="math-container">
+        <div className="para">
+          <h2>Let&apos;s do some math!</h2>
+          <p>
+            Once upon a time, there was a student who was taking a math test. She was feeling pretty
+            confident until she realized she forgot her calculator. Panicking, she asked the person
+            sitting next to her if she could borrow theirs. The student handed her the calculator,
+            but before she could even press a button, it started beeping uncontrollably. Confused,
+            she turned it over and saw a note that read, &quot;Warning: This calculator is
+            possessed. Use at your own risk.&quot;
+          </p>
+          <p>
+            The student didn&apos;t believe in ghosts, but she didn&apos;t want to take any chances.
+            She tried to give the calculator back, but the person next to her just shrugged and
+            said, &quot;Eh, it&apos;s been acting up lately. Just press the &quot;on&quot; button
+            a few times and it should work.&quot; The student hesitantly turned on the calculator,
+            and to her surprise, it started spitting out answers on its own. It was like the
+            calculator had a mind of its own! She quickly finished the test and returned the
+            calculator, feeling relieved to be done with it. From then on, she always made sure to
+            bring her own calculator to exams - just in case.
+          </p>
+        </div>
+        <div className="content-container">
+          <input className="display-screen result-display" type="text" value={count.next || count.operation || count.total || '0'} readOnly />
+          <div className="btn-container ">
+            <Buttons type="button" value="AC" handleClick={handleClick} />
+            <Buttons type="button" value="+/-" handleClick={handleClick} />
+            <Buttons type="button" value="%" handleClick={handleClick} />
+            <Buttons className="operators-buttons" type="button" value="÷" handleClick={handleClick} />
+          </div>
+
+          <div className="btn-container">
+            <Buttons type="button" value="7" handleClick={handleClick} />
+            <Buttons type="button" value="8" handleClick={handleClick} />
+            <Buttons type="button" value="9" handleClick={handleClick} />
+            <Buttons className="operators-buttons" type="button" value="x" handleClick={handleClick} />
+          </div>
+
+          <div className="btn-container">
+            <Buttons type="button" value="4" handleClick={handleClick} />
+            <Buttons type="button" value="5" handleClick={handleClick} />
+            <Buttons type="button" value="6" handleClick={handleClick} />
+            <Buttons className="operators-buttons" type="button" value="-" handleClick={handleClick} />
+          </div>
+
+          <div className="btn-container">
+            <Buttons type="button" value="1" handleClick={handleClick} />
+            <Buttons type="button" value="2" handleClick={handleClick} />
+            <Buttons type="button" value="3" handleClick={handleClick} />
+            <Buttons className="operators-buttons" type="button" value="+" handleClick={handleClick} />
+          </div>
+
+          <div className="btn-container">
+            <Buttons className="wide-btn " type="button" value="0" handleClick={handleClick} />
+            <Buttons type="button" value="." handleClick={handleClick} />
+            <Buttons className="operators-buttons" type="button" value="=" handleClick={handleClick} />
+          </div>
+
+        </div>
       </div>
-      {buttonArr.map((button) => (
-        <CalculatorButton
-          key={button.value}
-          value={button.value}
-          func={button.func}
-          className={button.className}
-        />
-      ))}
-    </div>
+    </>
   );
-}
-const CalculatorButton = ({ value, func, className = '' }) => (
-  <div
-    className={`calc-button-style ${className}`}
-    role="button"
-    tabIndex="0"
-    onClick={func}
-    onKeyPress={func}
-  >
-    {value}
-  </div>
-);
-
-Calculator.propTypes = {
-  total: PropTypes.string,
-  next: PropTypes.string,
-  operation: PropTypes.string,
-  setCalculatorObj: PropTypes.func.isRequired,
 };
 
-Calculator.defaultProps = {
-  total: null,
-  next: null,
-  operation: null,
-};
+export default Calculator;
