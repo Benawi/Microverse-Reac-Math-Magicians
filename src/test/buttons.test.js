@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import Buttons from '../Components/buttonsComponents';
+import Buttons from '../components/buttonsComponents';
 
 describe('Buttons', () => {
   test('renders correctly', () => {

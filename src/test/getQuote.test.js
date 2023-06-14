@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, waitFor, screen } from '@testing-library/react';
-import GetQuotes from '../Components/getQuote';
+import GetQuotes from '../components/getQuote';
 
 const mockFetch = jest.fn();
 global.fetch = mockFetch;
