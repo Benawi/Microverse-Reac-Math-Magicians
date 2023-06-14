@@ -21,4 +21,9 @@ describe('multiply', () => {
   });
 });
 
-
+describe('divide', () => {
+  test('divide two numbers correctly', () => {
+    expect(operate(5, 5, '÷')).toBe('1');
+    expect(operate(10, 5, '÷')).toBe('2');
+  });
+});
