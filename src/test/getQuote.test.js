@@ -1,23 +1,38 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { render, waitFor } from '@testing-library/react';
-import { rest } from 'msw';
-import { setupServer } from 'msw/node';
 import React from 'react';
-import GetQuotes from '../components/getQuote';
+import { render, waitFor, screen } from '@testing-library/react';
+import GetQuotes from '../Components/getQuote';
 
-test('it should render a quote when successfully fetching data from the API', async () => {
-  const server = setupServer(
-    rest.get('https://api.api-ninjas.com/v1/quotes', (req, res, ctx) => res(
-      ctx.json([
-        {
-          quote: 'test quote',
-          author: 'test author',
-        },
-      ]),
-    )),
-  );
-  server.listen();
-  const { getByText } = render(<GetQuotes />);
-  await waitFor(() => expect(getByText('test quote - test author')).toBeInTheDocument());
-  server.close();
+const mockFetch = jest.fn();
+global.fetch = mockFetch;
+
+describe('GetQuotes', () => {
+  test('renders correctly', async () => {
+    render(<GetQuotes />);
+
+    await waitFor(() => screen.getByText('Loading...'));
+
+    expect(screen.getByText('Loading...')).toBeInTheDocument();
+  });
+
+  test('displays quote after successful API call', async () => {
+    mockFetch.mockResolvedValueOnce({
+      json: jest.fn().mockResolvedValueOnce([{ quote: 'quote', author: 'author' }]),
+    });
+
+    render(<GetQuotes />);
+
+    await waitFor(() => screen.getByText('quote - author'));
+
+    expect(screen.getByText('quote - author')).toBeInTheDocument();
+  });
+
+  test('displays error message on API call failure', async () => {
+    mockFetch.mockRejectedValueOnce(new Error('API Error'));
+
+    render(<GetQuotes />);
+
+    await waitFor(() => screen.getByText('API Error'));
+
+    expect(screen.getByText('API Error')).toBeInTheDocument();
+  });
 });

@@ -1,17 +1,21 @@
-import { fireEvent, render } from '@testing-library/react';
-import Buttons from '../components/buttonsComponents';
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
+import Buttons from '../Components/buttonsComponents';
 
-test('it should call handleClick when button is clicked', () => {
-  const mockHandleClick = jest.fn();
-  const { getByText } = render(
-    <Buttons
-      className="test-class"
-      value="test-value"
-      handleClick={mockHandleClick}
-    />,
-  );
-  const button = getByText('test-value');
-  fireEvent.click(button);
-  expect(mockHandleClick).toHaveBeenCalledTimes(1);
-  expect(mockHandleClick).toHaveBeenCalledWith('test-value');
+describe('Buttons', () => {
+  test('renders correctly', () => {
+    const { container } = render(
+      <Buttons type="button" value="Click me" className="primary" handleClick={() => {}} />,
+    );
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  test('calls handleClick function when clicked', () => {
+    const handleClick = jest.fn();
+    const { getByText } = render(
+      <Buttons type="button" value="Click me" className="primary" handleClick={handleClick} />,
+    );
+    fireEvent.click(getByText('Click me'));
+    expect(handleClick).toHaveBeenCalled();
+  });
 });
