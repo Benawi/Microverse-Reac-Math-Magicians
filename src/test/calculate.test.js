@@ -6,7 +6,11 @@ describe('calculate', () => {
     expect(result).toEqual({ total: null, next: null, operation: null });
   });
 
- 
+  test('updates "next" with a number when no operation is set', () => {
+    const obj = { next: '5', total: null, operation: null };
+    const result = calculate(obj, '2');
+    expect(result).toEqual({ next: '52', total: null });
+  });
 
  
 });
