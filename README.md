@@ -1,5 +1,6 @@
 <a name="readme-top"></a>
-![image](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/872375b5-4e17-435f-971b-a04304b03ee1)
+<div align="center">
+<a ref="https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/872375b5-4e17-435f-971b-a04304b03ee1"> <image src="https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/872375b5-4e17-435f-971b-a04304b03ee1"></image></a></div>
 
 ![image](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/7edcaffc-9037-4210-8165-1538cc8b8c10)
 
