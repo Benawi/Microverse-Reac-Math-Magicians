@@ -34,7 +34,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 - Html files
 - CSS files
 - JS files
-- Html,CSS and JS linters file
+- HTML,CSS, and JS linters file
 
 ## 🛠 Built With <a name="built-with"></a>
 
