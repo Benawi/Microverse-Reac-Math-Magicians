@@ -81,7 +81,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
   - [x] The official [documentation](https://testing-library.com/docs/react-testing-library/intro) is followed
   - [x] Jest Setup(it's included in Create React App).
   - [x]  Write unit tests for the files operate.js and calculate.js using Jest.
-  - [x] Create unit to all React components tested:
+  - [x] Create a unit for all React components tested:
     - [x] Jest snapshots used to test the components.
     - [x] React Testing Library used to simulate user interaction.
   - [x] Run full tests suite using Jest. All tests [pass](https://github.com/Benawi/Microverse-Reac-Math-Magicians/assets/21217148/09c3332f-5ec0-4ad0-9d64-481d15f7dd90)
