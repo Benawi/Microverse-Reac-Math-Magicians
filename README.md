@@ -56,7 +56,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
 - [x] Math Magicians: 
    - [x] In the [previous project](https://github.com/Benawi/Microverse-Reac-Math-Magicians/pull/1), I worked on the setup of a React application using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html), now in this project:
    - [x] All the boilerplate from Create React App (text, images, styles) is deleted.
-   - [x] A new directory called components created.
+   - [x] A new directory called components was created.
    - [x] Inside components, a new Calculator.js file is created.
    - [x] In Calculator.js, create a React component that matches [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) design.
    - [x] The [design]( [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) ) only (JSX and CSS) is implemented
