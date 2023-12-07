@@ -282,7 +282,7 @@ Give me ⭐️ If you like this project!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- We would like to thank Microverse program for providing us this great chance.
+- We would like to thank the Microverse program for providing us with this great chance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
