@@ -73,7 +73,7 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] A website consisting of 3 pages: Home, Calculator, and Quote is created.
    - [x] The general layout match [these](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/project_full_website_v2.md) wireframes
    - [x] styles added to improve the look and feel.
-        - React basic styling (inline styles, importing CSS and pre-processed CSS files) used.
+        - React basic styling (inline styles, importing CSS, and pre-processed CSS files) used.
    - [x] For every page, a <Route> created.
    - [x] Navigation links for all 3 routes are displayed on each page.
    - [x] [React Router](https://reactrouter.com/en/main) used to make the routes work.
