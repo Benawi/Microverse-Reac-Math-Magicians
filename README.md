@@ -58,11 +58,11 @@ Math Magicians React Project - Microverse! project is a repository consisting of
    - [x] All the boilerplate from Create React App (text, images, styles) is deleted.
    - [x] A new directory called components was created.
    - [x] Inside components, a new Calculator.js file is created.
-   - [x] In Calculator.js, create a React component that matches [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) design.
+   - [x] In Calculator.js, create a a React component that matches [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) design.
    - [x] The [design]( [this](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/images/calculator.png) ) only (JSX and CSS) is implemented
    - [x] Functional components used
    - [x] At least 1 child component is created
-   - [x] The Calculator is imported and used it in the top-level component: App.js
+   - [x] The Calculator is imported and used in the top-level component: App.js
    - [x] All calculator buttons work according to their functionality e.g. the - button will subtract a given value
     - [x] The following external API: [API Ninjas](https://api-ninjas.com/api/quotes) used to fetch data
    - [x] A [new](https://github.com/Benawi/Microverse-Reac-Math-Magicians/blob/72eb01ce2a09a5d99c719a29da5914948a1587c0/src/components/displayQuoate.js#L4) component is created for displaying a quote
